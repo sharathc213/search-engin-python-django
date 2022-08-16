@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+excel2json.egg-info/PKG-INFO
+excel2json.egg-info/SOURCES.txt
+excel2json.egg-info/dependency_links.txt
+excel2json.egg-info/entry_points.txt
+excel2json.egg-info/requires.txt
+excel2json.egg-info/top_level.txt
+exceltojson/__init__.py
+exceltojson/console.py
+exceltojson/excel2json.py
+exceltojson/utils.py

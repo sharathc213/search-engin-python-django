@@ -1,0 +1,25 @@
+{% block includes %}
+{% if data  %}
+  {% for d in data %}
+<div class='result-list result-{{d.sl_no}}'>
+  <a href="{{d.head_link}}">
+    <span class='result-title title-{{d.sl_no}}''>{{d.head_line}}</span>
+  <a>
+  <br>
+  <span class='result-snippet snippet-{{d.sl_no}}'>Author :<a href="{{d.profile_link}}"> {{d.name}} </a></span>
+  <br>
+  <span class='result-metadata metadata-{{d.sl_no}}'>Published on {{d.published}}</span>
+</div>
+{% endfor %}
+{% else %}
+<div class='error'> 
+  <p>Your search 
+    <span class='keyword'>" {{keyword}} "</span> 
+    did not match any documents.
+  </p> 
+  <p>Suggestions:</p>
+  <li>Make sure that all words are spelled correctly.</li>
+  <li>Try different keywords.</li>
+  <li>Try more general keywords.</li></div>
+{% endif %}
+{% endblock includes %}

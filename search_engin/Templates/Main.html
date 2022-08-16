@@ -1,0 +1,61 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ======= Header ======= -->
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Search Engin</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+
+  
+    <!-- Google Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+   
+
+
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> {% endcomment %}
+    <script src="{% static 'vendor/jquery/dist/jquery.js' %}"></script>
+
+  
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  
+  
+  </head>
+  <!-- End Header -->
+
+<body>
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+    
+
+
+
+      {% block Main %}
+      {% endblock Main %}
+
+
+
+
+
+
+
+
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery/dist/jquery.js' %}"></script>
+  
+  
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+    </body>
+    </html>

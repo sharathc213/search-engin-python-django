@@ -1,0 +1,24 @@
+{% extends 'Main.html' %} {% block Main %}
+
+<div class="main">
+  <div class="home">
+  <div class="container">
+      <div class="row">
+          <div class="eight columns offset-by-two">
+              <h1 class="headline">Search Engine</h1>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="eight columns offset-by-two">
+              <form action="result.html" class="wiki-search-form">
+                  <input type="search" name="keyword" placeholder="Search ..." class="wiki-search-input" id="wiki-search-input">
+                  <button class="button btn btn-wiki">Search</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+{% endblock Main %}

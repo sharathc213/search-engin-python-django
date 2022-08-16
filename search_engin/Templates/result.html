@@ -1,0 +1,41 @@
+{% extends 'Main.html' %} {% block Main %}
+{% block includes %}
+  <script> $(document).ready(function() {
+    getresults("{{ keyword }}");
+  })</script>
+  {% csrf_token %}
+  <div class="main">
+  <div class="result">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="two-thirds column">
+                    <form action="result.html" class="result-wiki-search-form">
+                        <input name="keyword" type="text" value='{{ keyword }}' class="result-wiki-search-form-input" id="result-wiki-search-form-input">
+                        <button class="btn result-btn-wiki">Search</button>
+                    </form>
+                </div>
+                <div class="one-third column">
+                    <h1>Search</h1>
+                </div>		
+            </div>
+        </div>
+    </header>	
+    
+    <div class="container">
+        <section class="search-results">
+            <div class="one-half column">
+                <div class="display-results">
+
+                </div>
+            </div>
+        </section>
+    
+    </div> <!-- Container -->	
+</div> <!-- Results -->
+
+</div>
+</div>
+{% endblock includes %}'
+  
+{% endblock Main %}

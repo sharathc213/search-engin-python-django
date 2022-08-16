@@ -1,0 +1,3 @@
+[console_scripts]
+excel2json = exceltojson.console:main
+
